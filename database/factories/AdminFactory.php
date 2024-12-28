@@ -17,6 +17,7 @@ class AdminFactory extends Factory
     public function definition(): array
     {
         usleep(250000);
+
         return [
             'nik' => fake()->unique()->numerify('################'),
             'phone' => fake()->unique()->numerify('08##########'),

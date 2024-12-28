@@ -19,6 +19,7 @@ class EmployeeFactory extends Factory
     public function definition(): array
     {
         usleep(250000);
+
         return [
             'company_id' => Company::factory(),
             'name' => fake()->name(),

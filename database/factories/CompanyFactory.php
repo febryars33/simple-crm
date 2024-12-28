@@ -17,6 +17,7 @@ class CompanyFactory extends Factory
     public function definition(): array
     {
         usleep(250000);
+
         return [
             'name' => fake()->company(),
             'email' => fake()->safeEmail(),
